@@ -1,0 +1,28 @@
+
+{% extends "templates/base.html" %}
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Welcome to my Site!</h3>
+  <img src="static/me.jpg" class="img-responsive img-rounded corners" style="display:inline" alt="myself" width="200" height="200">
+</div>
+
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Some Facts About Me</h3><br>
+  <div class="row">
+    <div class="col-md-6">
+      <p>I attend the University of Michigan- Ann Arbor where I study Information Science. My favorite things about Ann Arbor are Football Saturdays, the fall time, and the school spirit.  </p>
+      <img src="static/umich.jpg" class="img-responsive img-rounded corners margin" style="width:80%" alt="umich">
+    </div>
+    <div class="col-md-6"> 
+      <p>I'm seriously addicted to coffee. Very rarely will I go a day without at least one cup of coffee. My favorite coffee shop is Biggby Coffee, however I enojy Starbucks too!</p>
+      <img src="static/coffee.jpg" class="img-responsive img-rounded corners margin" style="width:75%" alt="coffee"> 
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+
