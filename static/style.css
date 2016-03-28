@@ -1,0 +1,102 @@
+
+ header{
+    font: 20px Open Sans, Pacifico;
+    line-height: 1.8;
+    color: #f5f6f7;
+    background-color: #D2CDFD;
+    text-align: center;
+    color: black;
+    display: block;
+    padding: 1px;
+  }
+  header img {
+    margin: auto;
+    margin-bottom: 5px
+  }
+  h3{
+    font-size: 40px;
+    font-weight: bold;
+  }
+  body {
+    font: 20px; 
+    font-family: 'Bree Serif', serif;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #f5f6f7;
+  }
+  .active {
+    border: solid white 2px;
+  }
+  p {font-size: 25px;
+    text-align: center;}
+  .margin {margin-bottom: 20px;
+    margin-top: 10px;}
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .home-1 { 
+      background-image: url("bignyc.jpg");
+      color: #000000;
+  }
+  .photo-2{
+    background-image: url("buildings.jpg");
+    color: #000000;
+  }
+  .home-3 { 
+      background-color: SkyBlue; /*blue*/ 
+      color: #000000;
+  }
+  .home-3 img{
+    margin: 0 auto;
+    display: block;
+  }
+  .footer-4 { 
+      background-color: #D2CDFD; /*lavendar*/
+      color: #000000;
+  }
+  .interestsandphoto-5{ 
+      background-color: #FFA8BC; /*pink*/
+      color: #000000;
+  }
+  .interests-7 {
+    background-image: url("nycclouds.jpg");
+    color: #000000;
+  }
+  .contact-8{
+    background-image: url("skyline.jpeg");
+    color: #000000;
+  }
+  .navbar {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border: 0;
+      border-radius: 10px;
+      margin-bottom: 0;
+      font-size: 18px;
+      letter-spacing: 3px;
+  }
+  .navbar-nav li a {
+      color: #FFFFFF !important;
+  }
+  .navbar-nav  li a:hover {
+      color: SkyBlue !important;
+  }
+  .container-fluid {
+      border: solid white 3px;
+  }
+  .navbar-toggle {
+      float: left;
+  }
+  footer{
+    font-family: Open Sans, Pacifico;
+    font-size: 50px;
+    line-height: 1.8;
+    text-align: center;
+    display: block; 
+  }
+ @media only screen and (min-width: 600px) {
+   .navbar-collapse{
+    margin-left: 0;
+    margin-right: 0;
+   }
