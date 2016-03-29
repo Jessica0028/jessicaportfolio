@@ -25,7 +25,7 @@
     color: #f5f6f7;
   }
   .active {
-    border: solid white 2px;
+    border: solid white 3px;
   }
   p {font-size: 25px;
     text-align: center;}
