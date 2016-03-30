@@ -1,6 +1,6 @@
 
  header{
-    font: 20px Open Sans, Pacifico;
+    font: 36px Open Sans, Pacifico;
     line-height: 1.8;
     color: #f5f6f7;
     background-color: #D2CDFD;
@@ -14,7 +14,7 @@
     margin-bottom: 5px
   }
   h3{
-    font-size: 40px;
+    font-size: 32px;
     font-weight: bold;
   }
   body {
@@ -27,7 +27,7 @@
   .active {
     border: solid white 3px;
   }
-  p {font-size: 25px;
+  p {font-size: 24px;
     text-align: center;}
   .margin {margin-bottom: 20px;
     margin-top: 10px;
@@ -83,11 +83,18 @@
   .navbar-nav  li a:hover {
       color: SkyBlue !important;
   }
+  .col-md-3 img:hover {
+    border: solid white 3px;
+  }
   .container-fluid {
       border: solid white 3px;
   }
   .navbar-toggle {
       float: left;
+  }
+  p{
+     text-align: justify;
+     text-justify: inter-word;
   }
   footer{
     font-family: Open Sans, Pacifico;
@@ -96,8 +103,15 @@
     text-align: center;
     display: block; 
   }
- @media only screen and (min-width: 600px) {
-   .navbar-collapse{
-    margin-left: 0;
-    margin-right: 0;
+
+  @media only screen and (min-width: 320px) and (max-width:600px) {
+    .container-fluid{
+      border: solid black 3px;
    }
+ }
+
+  @media only screen and (min-width: 768px) {
+    .container-fluid {
+      border: solid white 3px;
+    }
+  }

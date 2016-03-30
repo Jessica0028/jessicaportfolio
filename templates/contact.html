@@ -1,23 +1,36 @@
 {% extends "templates/base.html" %}
 
 {% block title %}
-Contact
+Contact Information
 {% endblock %}
 
 {% block content %}
 <div class="container-fluid contact-8 text-center">
 	<h3 class="margin">Need to Contact Me?</h3>
-  		<img src="static/me.jpg" class="img-responsive img-rounded corners" style="display:inline" alt="myself" width="200" height="200">
+  		<img src="static/me.jpg" class="img-responsive img-rounded corners" style="display:inline" alt="myself" width="175" height="175">
 </div>
 
 <div class="container-fluid home-3 text-center"> 
   <h3 class="margin">Phone Number and Email </h3><br>
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-4">
       <p>My cell phone number is 269-352-1904. You may call me before 3 PM on Monday and Wednesdays, after 2:30 on Tuesdays and Thursdays and anytime during the weekend.</p>
     </div>
-    <div class="col-md-6"> 
-      <p>My email is jessandr@umich.edu. I check my email frequently, so you should have a response from me within 24 hours. Also if you need to mail me something my address is up at the top of my page! </p>
+    <div class="col-md-4"> 
+      <p>My email is jessandr@umich.edu. I check my email frequently, so you should have a response from me within 24 hours. My address is at the top if you need it! </p>
+    </div>
+    <div class="col-md-4"> 
+      <p>Send me a message or comment to jessandr@umich.edu</p>
+        <form action="email.php" method="post">
+        Name:<br>
+        <input type ="text" name="name" placeholder="enter your name"><br>
+        Email:<br>
+        <input type="email" name="email" placeholder="enter your email"><br>
+        Comment:<br>
+        <textarea name="message" placeholder="enter your message"></textarea><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset"> 
+        </form>
     </div>
   </div>
 </div>
