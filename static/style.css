@@ -30,7 +30,8 @@
   p {font-size: 25px;
     text-align: center;}
   .margin {margin-bottom: 20px;
-    margin-top: 10px;}
+    margin-top: 10px;
+    margin-left: 25px;}
   .container-fluid {
       padding-top: 70px;
       padding-bottom: 70px;
