@@ -27,11 +27,30 @@
   .active {
     border: solid white 3px;
   }
+
+  .carousel-inner {
+    background-color: SkyBlue;
+  }
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 30%;
+      margin: auto;
+  }
+  .carousel-control.left, .carousel-control.right {
+    background-color: SkyBlue !important;
+  }
+
+  .carousel-caption {
+    color: solid black !important;
+  }
+
   p {font-size: 24px;
     text-align: center;}
   .margin {margin-bottom: 20px;
     margin-top: 10px;
-    margin-left: 25px;}
+    margin-left: 30px;
+  }
   .container-fluid {
       padding-top: 70px;
       padding-bottom: 70px;
@@ -83,8 +102,10 @@
   .navbar-nav  li a:hover {
       color: SkyBlue !important;
   }
-  .col-md-3 img:hover {
+
+  .col-md-4 img {
     border: solid white 3px;
+    margin-left: 50px;
   }
   .container-fluid {
       border: solid white 3px;
@@ -92,6 +113,19 @@
   .navbar-toggle {
       float: left;
   }
+  .button {
+    background-color: #FFA8BC;
+    border: solid black 2px;
+    border-radius: 10px;
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+   /* margin: 4px 2px;*/
+    cursor: pointer;
+}
   p{
      text-align: justify;
      text-justify: inter-word;
@@ -104,9 +138,12 @@
     display: block; 
   }
 
-  @media only screen and (min-width: 320px) and (max-width:600px) {
+  @media only screen and (min-width: 320px) and (max-width:720px) {
     .container-fluid{
       border: solid black 3px;
+   }
+   .carousel-caption{
+    display:none;
    }
  }
 

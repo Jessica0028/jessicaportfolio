@@ -7,42 +7,95 @@ Photos
 
 {% block content %}
 <div class="container-fluid photo-2 text-center">
-	<h3 class="margin">Family, Friends, and Food</h3>
+	<h3 class="margin">Check out my Photos!</h3>
   		<img src="static/me.jpg" class="img-responsive img-rounded corners" style="display:inline" alt="myself" width="175" height="175">
 </div>
-<div class="container-fluid interestsandphoto-5 text-center">
-  <h3 class="margin">Photos</h3>
-    <div class="row">
-      <div class="col-md-3">
-      <p>Sorority Sisters<p>
-      	<img src="static/tau.jpg" class="img-responsive img-rounded corners margin" style="width:90%" alt="tau"><br>
-		<img src="static/tailgatee.jpg" class="img-responsive img-rounded corners margin" style="width:80%" alt="tailgate"><br>
-		<img src="static/emilyandjess.jpg" class="img-responsive img-rounded corners margin" style="width:70%" alt="bidnight"><br>
-		<img src="static/friends.jpg" class="img-responsive img-rounded corners margin" style="width:85%"alt="friends"><br>
-	 </div>
-	 <div class="col-md-3">
-	 <p>Childhood Friends</p>
-	   <img src="static/savinajess.jpg" class="img-responsive img-rounded corners margin" style="width:70%" alt="savinandjess"><br>
-	   <img src="static/yvettejess.jpg" class="img-responsive img-rounded corners margin" style="width:75% " alt="yvetteandjessica"><br>
-	   <img src="static/kaitjess.jpg" class="img-responsive img-rounded corners margin" style="width:60%" alt="kaitlynnandjess"><br>
-	   <img src="static/all.jpg" class="img-responsive img-rounded corners margin" style="width:80%" alt="elenaandjess">
-	 </div>
-	 <div class="col-md-3">
-	 <p>Family</p>
-	   <img src="static/momdad.jpg" class="img-responsive img-rounded corners margin" style="width:80%"alt="momanddad"><br>
-	   <img src="static/dadandsarah.jpg" class="img-responsive img-rounded corners margin" style="width:80%" alt="fathersday"><br>
-	   <img src="static/summer2014.jpg" class="img-responsive img-rounded corners margin" style="width: 80%" alt="summer"><br>
-	   <img src="static/canada.jpg" class="img-responsive img-rounded corners margin" style="width: 70%" alt="triptocanada"><br>
-	 </div>
-	 <div class="col-md-3">
-	 <p>Nature + Food</p>
-	   <img src="static/peru.jpg" class="img-responsive img-rounded corners margin" style="width:80%" alt="peru"><br>
-	   <img src="static/sky.jpg" class="img-responsive img-rounded corners margin" style="width:80%" alt="sky"><br>
-	   <img src="static/IMG_8141.JPG" class="img-responsive img-rounded corners margin" style="width:70%" alt="pasta"><br>
-	   <img src="static/waffles.jpg" class="img-responsive img-rounded corners margin" style="width:70%" alt="wafflez"><br>
-	 </div>
-   </div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+        <img src="static/momdad.jpg" class="img-responsive img-rounded corners margin" alt="momanddad">
+        <div class="carousel-caption">
+        	<h2>Mom and Dad</h2>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="static/bidnightt.jpg" class="img-responsive img-rounded corners margin" alt="tauclass">
+        <div class="carousel-caption">
+        	<h2>My Pledge Class</h2>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="static/summer2014.jpg" class="img-responsive img-rounded corners margin" alt="family">
+        <div class="carousel-caption">
+        	<h2>Summer 2014</h2>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="static/tailgate.jpg" class="img-responsive img-rounded corners margin" alt="tailgate">
+        <div class="carousel-caption">
+        	<h2>Tailgate 2015</h2>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="static/peru.jpg" class="img-responsive img-rounded corners margin" alt="machupicchu">
+        <div class="carousel-caption">
+        	<h2>Machu Picchu</h2>
+        </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 
+<div class="container-fluid interestsandphoto-5 text-center">
+  <h3 class="margin">More Photos</h3>
+    <div class="row">
+      <div class="col-md-4">
+      	<img src="static/tau.jpg" class="img-responsive img-rounded corners margin" style="width:85%" alt="tau"> <figcaption>My Pledge Class</figcaption><br>
+		<img src="static/dadandsarah.jpg" class="img-responsive img-rounded corners margin" style="width:80%" alt="fathersday"><figcaption>Fathers Day 2013</figcaption><br>
+		<img src="static/mypic.jpg" class="img-responsive img-rounded corners margin" style="width:90%" alt="bidnight"><figcaption>Emily and I</figcaption><br>
+		<img src="static/friends.jpg" class="img-responsive img-rounded corners margin" style="width:90%"alt="friends"><figcaption>Emily, Eni, and I</figcaption><br>
+	 </div>
+	 <div class="col-md-4">
+	   <img src="static/savinajess.jpg" class="img-responsive img-rounded corners margin" style="width:70%" alt="savinandjess"><figcaption>Savina and I</figcaption><br>
+	   <img src="static/yvettejess.jpg" class="img-responsive img-rounded corners margin" style="width:75% " alt="yvetteandjessica"><figcaption>Summer 2014 w/ Yvette</figcaption><br>
+	   <img src="static/kaitjess.jpg" class="img-responsive img-rounded corners margin" style="width:75%" alt="kaitlynnandjess"><figcaption>Summer 2015 w/ Kaitlynn</figcaption><br>
+	   <img src="static/all.jpg" class="img-responsive img-rounded corners margin" style="width:90%" alt="friends"><figcaption>Becca, Kim, Dianne, and I</figcaption>
+	 </div>
+
+	 <div class="col-md-4">
+	   <img src="static/IMG_8141.JPG" class="img-responsive img-rounded corners margin" style="width:70%" alt="pasta"><figcaption>Pasta</figcaption><br>
+	   <img src="static/IMG_6764.jpg" class="img-responsive img-rounded corners margin" style="width:75% " alt="crowsnest"><figcaption>Breakfast at Crows Nest</figcaption><br>
+	   <img src="static/IMG_8641.jpg" class="img-responsive img-rounded corners margin" style="width:90%" alt="waffles"><figcaption>Waffles at Cafe Zola</figcaption><br>
+	   <img src="static/food.jpg" class="img-responsive img-rounded corners margin" style="width:85%" alt="food"><figcaption>Dinner at Slurping Turtle</figcaption>
+	 </div>
+   </div>
+</div>	
+
 {% endblock %}
+
 	
