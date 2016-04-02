@@ -119,9 +119,7 @@
   }
   .navbar-toggle {
       float: left;
-      color: white;
-      letter-spacing: 1px;
-      font-size: 16px;
+      font-size: 0.1px
   }
   .button {
     background-color: SkyBlue;
