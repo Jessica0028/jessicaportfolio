@@ -13,12 +13,18 @@
     margin: auto;
     margin-bottom: 5px
   }
+  a{
+    color: #000046 !important;
+  }
   h3{
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
   }
+  h2{font-size: 32px;}
+
+  h4{font-size: 24px;}
+ 
   body {
-    font: 20px; 
     font-family: 'Bree Serif', serif;
     line-height: 1.5;
     letter-spacing: 1px;
@@ -47,6 +53,7 @@
 
   p {font-size: 24px;
     text-align: center;}
+  
   .margin {margin-bottom: 20px;
     margin-top: 10px;
     margin-left: 30px;
@@ -112,36 +119,35 @@
   }
   .navbar-toggle {
       float: left;
+      color: white;
+      letter-spacing: 1px;
+      font-size: 16px;
   }
   .button {
-    background-color: #FFA8BC;
+    background-color: SkyBlue;
     border: solid black 2px;
     border-radius: 10px;
-    color: black;
     padding: 10px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-   /* margin: 4px 2px;*/
     cursor: pointer;
-}
+  }
   p{
      text-align: justify;
      text-justify: inter-word;
   }
   footer{
     font-family: Open Sans, Pacifico;
-    font-size: 50px;
+    font-size: 22px;
     line-height: 1.8;
     text-align: center;
-    display: block; 
+    display: block;
+    letter-spacing: 1px; 
   }
 
   @media only screen and (min-width: 320px) and (max-width:720px) {
-    .container-fluid{
-      border: solid black 3px;
-   }
    .carousel-caption{
     display:none;
    }
